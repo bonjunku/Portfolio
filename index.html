@@ -36,25 +36,25 @@
     </section>
 
     <!-- About -->
-    <section id="about">
+    <section id="about" class="section section__container">
         <h1>About me</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum id nihil molestiae quae iusto qui ea dolorem est blanditiis, consequuntur laboriosam incidunt quaerat ab cum architecto similique impedit mollitia accusantium.</p>
         <div class="about__majors">
             <div class="major">
                 <div class="major__icon"><i class="fab fa-html5"></i></div>
-                <div class="major__title">Front-end</div>
+                <div class="major__title"><h2>Front-end</h2></div>
                 <div cl ass="major__description">React, Vue, Web APIs,<br />
                 React,Vue,Web APIs</div>
             </div>
             <div class="major">
                 <div class="major__icon"><i class="fab fa-html5"></i></div>
-                <div class="major__title">Front-end</div>
+                <div class="major__title"><h2>Front-end</h2></div>
                 <div class="major__description">React, Vue, Web APIs,<br />
                 React,Vue,Web APIs</div>
             </div>
             <div class="major">
                 <div class="major__icon"><i class="fab fa-html5"></i></div>
-                <div class="major__title">Front-end</div>
+                <div class="major__title"><h2>Front-end</h2></div>
                 <div class="major__description">React, Vue, Web APIs,<br />
                 React,Vue,Web APIs</div>
             </div>
@@ -62,13 +62,16 @@
         <div class="about__jobs">
             <div class="job">
                 <img src="img/favicon.png" alt="logo" class="job__logo"/>
-                <p class="job__name">Currently working at nowhere</p>
-                <p class="job__period"> 2021-09-02</p>
+                <div class="job__description">
+                    <p class="job__name">Currently working at nowhere</p>
+                    <p class="job__period"> 2021-09-02</p>
+                </div>
             </div>
             <div class="job">
                 <img src="img/favicon.png" alt="logo" class="job__logo"/>
-                <p class="job__name">Currently working at nowhere</p>
-                <p class="job__period"> 2021-09-02</p>
+                <div class="job__description">
+                    <p class="job__name">Currently working at nowhere</p>
+                    <p class="job__period"> 2021-09-02</p>
             </div>
 
         </div>
@@ -76,22 +79,15 @@
 
     <!-- Skills -->
     <section id="skills">
+    <div class="section__container">
         <h1>Skills</h1>
-    <h2>Skills & Attributes</h2>
-    <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit quibusdam nisi ad voluptatibus eos. At, vitae cum est placeat, impedit ex numquam animi beatae nostrum reiciendis voluptatem aspernatur asperiores debitis?
-    </p>
-    <div class="skillset">
-        <div class="skillset__left">
-            <h3 class="skillset__title">Skills</h3>
-            <div class="skill">
-                <div class="skill__description">
-                    <span>HTML</span>
-                    <span>99%</span>
-                </div>
-                <div class="skill__bar">
-                    <div class="skill__value"></div>
-                </div>
+        <h2>Skills & Attributes</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit quibusdam nisi ad voluptatibus eos. At, vitae cum est placeat, impedit ex numquam animi beatae nostrum reiciendis voluptatem aspernatur asperiores debitis?
+        </p>
+        <div class="skillset">
+            <div class="skillset__left">
+                <h3 class="skillset__title">Skills</h3>
                 <div class="skill">
                     <div class="skill__description">
                         <span>HTML</span>
@@ -100,38 +96,46 @@
                     <div class="skill__bar">
                         <div class="skill__value"></div>
                     </div>
-                </div>
-                <div class="skill">
-                    <div class="skill__description">
-                        <span>HTML</span>
-                        <span>99%</span>
+                    <div class="skill">
+                        <div class="skill__description">
+                            <span>HTML</span>
+                            <span>99%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value"></div>
+                        </div>
                     </div>
-                    <div class="skill__bar">
-                        <div class="skill__value"></div>
+                    <div class="skill">
+                        <div class="skill__description">
+                            <span>HTML</span>
+                            <span>99%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value" style="width:50%"></div>
+                        </div>
                     </div>
-                </div>
-                <div class="skill">
-                    <div class="skill__description">
-                        <span>HTML</span>
-                        <span>99%</span>
-                    </div>
-                    <div class="skill__bar">
-                        <div class="skill__value"></div>
+                    <div class="skill">
+                        <div class="skill__description">
+                            <span>HTML</span>
+                            <span>99%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value"></div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-
-        <div class="skillset_right">
-            <div class="tools">
-                <h3 class="skillset__title">Tools</h3>
-                    <ul class="tools__list">
-                        <li><span>VS Code</span></li>
-                        <li><span>IntelliJ</span></li>
-                        <li><span>Android Studio Code</span></li>
-                        <li><span>iOS development tools</span></li>
-                        <li><span>Sketch app</span></li>
-                    </ul>
+            <div class="skillset__right">
+                <div class="tools">
+                    <h3 class="skillset__title">Tools</h3>
+                        <ul class="tools__list">
+                            <li><span>VS Code</span></li>
+                            <li><span>IntelliJ</span></li>
+                            <li><span>Android Studio Code</span></li>
+                            <li><span>iOS development tools</span></li>
+                            <li><span>Sketch app</span></li>
+                        </ul>
+                </div>
                 <div class="etc">
                     <h3 class="skillset__title">Etc</h3>
                     <ul class="etc__list">
@@ -140,10 +144,11 @@
                         <li><span>Math</span></li>
                     </ul>
                 </div>
-
+    
             </div>
-
         </div>
+    
+        
     </div>
     </section>
     
