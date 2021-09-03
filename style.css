@@ -4,8 +4,8 @@
   --color-white: #ffffff;
   --color-light-white: #eeeeee;
   --color-dark-white: #bdbdbd;
-  --color-pink: #fe918d;
-  --color-dark-pink: #ff6863;
+  --color-green: #328132;
+  --color-bright-green: #54d322;
   --color-black: #4d4d4d;
   --color-dark-grey: #4d4d4d;
   --color-grey: #616161;
@@ -28,12 +28,14 @@
   --weight-regular: 400;
   
   /* Size */
+  --size-border-radius:4px;
 }
 
   /* Universal tags */
   * {
     box-sizing:border-box;
 }
+
 
 /* Typography */
 h1 {
@@ -62,4 +64,51 @@ h1 {
     font-weight: var(--font-regular);
     color: var(--color-black);
     margin: 4px 0;
+  }
+  
+  body{
+      font-family: 'Open Sans',sans-serif;
+      margin:0;
+      cursor: default;
+  }
+
+  a{
+      text-decoration: none;
+      color:var(--color-white);
+  }
+  
+  ul{
+      list-style:none;
+      padding:0;
+  }
+
+  /* Navbar */
+  #navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    background-color: var(--color-green);
+    color:var(--color-white);
+  }
+  .navbar__menu{
+     display:flex;
+  }
+  .navbar__menu__item{
+     padding: 8px 12px;
+     margin: 0 4px;
+    border-radius: var(--size-border-radius);
+  }
+  .navbar__logo{
+      font-size: var(--font-medium);
+      font-weight:var(--weight-semi-bold);
+  }
+
+  .navbar__menu__item .active{
+      border: 1px solid var(--color-white);
+    
+  }
+  .navbar__menu__item:hover{
+      background-color:var(--color-bright-green);
+      
   }
