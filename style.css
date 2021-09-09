@@ -131,6 +131,14 @@ h1 {
       
   }
 
+  .navbar__toggle-btn{
+      position:absolute;
+      right:32px;
+      font-size:24px;
+      color:white;
+      display:none;
+  }
+
   /* Home */
 #home{
     background: url('img/home-background.png') center/cover no-repeat;
@@ -391,6 +399,7 @@ section {
     font-size:20px;
     background-color: var(--color-white);
     border-radius:var(--size-border-radius);
+    padding:10px;
 }
 
 .testimonial__speech-bubble p {
@@ -424,4 +433,47 @@ section {
 .contact__links i:hover{
     transform: scale(1.1);
     color: var(--color-yellow);
+}
+
+/* For below 768px screen width */
+/* 미디어 쿼리 안에 들어가는 내용 최소화 */
+@media screen and (max-width: 768px){
+    .navbar__toggle-btn{
+        padding: 10px 0 0 0;
+        display:block;
+    }
+
+    #navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar__menu{
+        flex-direction: column;
+        text-align:center;
+        width:100%;
+        /* 정렬이 안될 때 여백이 있는지, width가 작은지 보자 */
+    }
+
+    .navbar__majors{
+        flex-directions:column;
+    }
+
+    .major{
+        margin-bottom:38px;
+    }
+
+    .skillset{
+        flex-direction:column;
+        
+    }
+
+    .project{
+        flex-grow:1;
+    }
+    .testimonial__avatar{
+        width:80px;
+        height:80px;
+        
+    }
 }
