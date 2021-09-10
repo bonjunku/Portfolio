@@ -492,17 +492,25 @@ pointer-events: auto;
     #navbar{
         flex-direction: column;
         align-items: flex-start;
+        background-color: var(--color-green);
     }
 
     .navbar__menu{
         flex-direction: column;
         text-align:center;
         width:100%;
+        display:none;
         /* 정렬이 안될 때 여백이 있는지, width가 작은지 보자 */
     }
 
-    .navbar__majors{
-        flex-directions:column;
+    .navbar__menu.open{
+        display:block;
+    }
+
+    
+    .about__majors{
+        display:flex;
+        flex-direction: column;
     }
 
     .major{

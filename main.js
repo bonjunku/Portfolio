@@ -22,8 +22,16 @@ navbarMenu.addEventListener('click',(event)=>{
   if (link == null){
     return;
   }
+  navbarMenu.classList.remove('open');
   scrollintoView(link);
 });
+
+// Navbar toggle button for small screen
+const navbarToggleBtn = document.querySelector('.navbar__toggle-btn');
+navbarToggleBtn.addEventListener('click',()=>{
+  navbarMenu.classList.toggle('open');
+});
+
 
 //Scroll to Contact
 const homeContact =document.querySelector('.home__contact');
