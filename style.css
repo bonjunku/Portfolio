@@ -102,21 +102,34 @@ h1 {
 
   /* Navbar */
   #navbar {
+    width:100%;
+    position:fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 16px;
-    background-color: var(--color-green);
+    background-color: transparent;
     color:var(--color-white);
+    transition: all var(--animation-duration) ease-in-out;
+  }
+  #navbar.navbar--dark{
+    background-color: var(--color-green);
+    padding:8px;
   }
   .navbar__menu{
-     display:flex;
+    display:flex;
   }
   .navbar__menu__item{
-     padding: 8px 12px;
-     margin: 0 4px;
-    border-radius: var(--size-border-radius);
+    padding: 8px 12px;
+    margin: 0 4px;
+    color:var(--color-white);
+    cursor:pointer;
   }
+.navbar__menu__item.active {
+    border: 1px solid white;
+    border-radius: var(--size-border-radius);
+}
+
   .navbar__logo{
       font-size: var(--font-medium);
       font-weight:var(--weight-semi-bold);
@@ -143,6 +156,7 @@ h1 {
 #home{
     background: url('img/home-background.png') center/cover no-repeat;
     padding: 40px;
+    padding-top: 120px;
     text-align:center;
 }
 
