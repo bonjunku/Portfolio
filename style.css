@@ -111,6 +111,7 @@ h1 {
     background-color: transparent;
     color:var(--color-white);
     transition: all var(--animation-duration) ease-in-out;
+    z-index: 1;
   }
   #navbar.navbar--dark{
     background-color: var(--color-green);
