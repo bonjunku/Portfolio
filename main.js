@@ -29,12 +29,12 @@ navbarMenu.addEventListener('click',(event)=>{
 const homeContact =document.querySelector('.home__contact');
 homeContact.addEventListener('click',()=>{
   scrollintoView('#contact');
-})
+});
 
 function scrollintoView(selector){
   const scrollTo = document.querySelector(selector);
   scrollTo.scrollIntoView({behavior:'smooth'});
-}
+};
 
 
 //make Home transparent
@@ -42,7 +42,7 @@ const home = document.querySelector('.home__container');
 const homePos = home.getBoundingClientRect().height;
 document.addEventListener('scroll',()=>{
   home.style.opacity=1-window.scrollY/homePos;
-})
+});
 
 //Show "arrow up" button when scrolling down
 const arrowUp=document.querySelector('.arrow-up');
@@ -53,9 +53,37 @@ document.addEventListener('scroll', ()=>{
   else{
     arrowUp.classList.remove('visible');
   }
-})
+});
 
 // Handle click on the "arrow up" button
 arrowUp.addEventListener('click', ()=>{
-  scrollIntoView('#home');
-})
+  scrollintoView('#home');
+});
+
+//Projects
+const workBtnContainer = document.querySelector('.work__categories');
+const projectContainer = document.querySelector('.work__projects');
+const projects = document.querySelectorAll('.project');
+workBtnContainer.addEventListener('click',(e)=>{
+  //span tag가 클릭되는 경우 처리 
+  const filter = e.target.dataset.filter || e.target.parentNode.dataset.filter;
+  
+  if (filter==null){
+    return;
+  }
+
+  projectContainer.classList.add('anim-out');
+  
+  setTimeout(()=>{
+    projects.forEach((project)=>{
+      if(filter ==='*' || filter === project.dataset.type) {
+        project.classList.remove('invisible');
+      } else{
+        project.classList.add('invisible');
+      }
+      
+    });
+    projectContainer.classList.remove('anim-out');
+  },300);
+
+});
