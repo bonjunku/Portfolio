@@ -126,10 +126,6 @@ h1 {
     color:var(--color-white);
     cursor:pointer;
   }
-.navbar__menu__item.active {
-    border: 1px solid white;
-    border-radius: var(--size-border-radius);
-}
 
   .navbar__logo{
       font-size: var(--font-medium);
@@ -142,6 +138,8 @@ h1 {
   }
   .navbar__menu__item:hover{
       background-color:var(--color-dark-green);
+      border: 1px solid white;
+      border-radius: var(--size-border-radius);
       
   }
 
@@ -295,7 +293,7 @@ section {
     padding: 8px 48px;
 }
 
-.category__btn.active,
+.category__btn.selected,
 .category__btn:hover{
     background-color:var(--color-pink);
     color:var(--color-white);
