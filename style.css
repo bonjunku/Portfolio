@@ -453,6 +453,25 @@ section {
     color: var(--color-yellow);
 }
 
+/* Scroll */
+.arrow-up{
+position:fixed;
+bottom:50px;
+right:50px;
+font-size:50px;
+background-color: var(--color-green);
+color:var(--color-white);
+border-radius: 50%;
+opacity:0;
+transition:opacity 300ms ease-in;
+pointer-events: none;
+}
+
+.arrow-up.visible{
+opacity:1;
+pointer-events: auto;
+}
+
 /* For below 768px screen width */
 /* 미디어 쿼리 안에 들어가는 내용 최소화 */
 @media screen and (max-width: 768px){
