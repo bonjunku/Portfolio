@@ -173,6 +173,7 @@ h1 {
 
 .home__title, .home__description{
     color:var(--color-white);
+    padding:5px;
 }
 
 .home__contact{
