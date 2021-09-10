@@ -5,6 +5,7 @@
   --color-light-white: #eeeeee;
   --color-dark-white: #bdbdbd;
   --color-green: #3F642F;
+  --color-light-green:#5fca32;
   --color-dark-green:#28421D;
   --color-black: #4d4d4d;
   --color-dark-grey: #4d4d4d;
@@ -302,14 +303,14 @@ section {
 
 .category__btn.selected,
 .category__btn:hover{
-    background-color:var(--color-pink);
+    background-color:var(--color-light-green);
     color:var(--color-white);
 }
 
 .category__btn.active .category__count,
 .category__btn:hover .category__count{
     opacity:1;
-    top:0;
+    top:7px;
 }
 
 .category__count{
