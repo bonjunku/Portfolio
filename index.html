@@ -24,7 +24,7 @@
             <li class="navbar__menu__item" data-link="#about">About</li>
             <li class="navbar__menu__item" data-link="#skills">Skills</li>
             <li class="navbar__menu__item" data-link="#work">My work</li>
-            <li class="navbar__menu__item" data-link="#testimonials">Testiminials</li>
+            <li class="navbar__menu__item" data-link="#testimonials">Challenge log</li>
             <li class="navbar__menu__item" data-link="#contact">Contact</li>
         </ul>
         <!-- Toggle button -->
@@ -38,7 +38,7 @@
             <img src="img/profile_revised.jpg" alt="zaraza's photo" class="home__avatar"> 
         <h1 class="home__title">Hello👋<br />I'm Bonjun Ku</h1>
         <h2 class="home__description">Seoul, Korea</h2>
-        <h3 class="home__description">Currently studying to be a Full-Stack Web Developer</h3>
+        <h3 class="home__description">Currently studying to be a Front-end Web Developer</h3>
         <button class="home__contact" data-link="#contact">Contact Me</button>
         </div>
     </section>
@@ -46,7 +46,12 @@
     <!-- About -->
     <section id="about" class="section section__container">
         <h1>About me</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum id nihil molestiae quae iusto qui ea dolorem est blanditiis, consequuntur laboriosam incidunt quaerat ab cum architecto similique impedit mollitia accusantium.</p>
+        <p>I love to implement what is visible.😎</p>
+        <p>I believe that studying new things makes me bigger than yesterday.🌱</p>
+    <p>I majored in mechanical engineering🦿 and artificial intelligence🧠</p>
+    <p>And now I am very interested in web development.</p>
+        
+
         <div class="about__majors">
             <div class="major">
                 <div class="major__icon"><i class="fab fa-html5"></i></div>
@@ -61,7 +66,7 @@
             <div class="major">
                 <div class="major__icon"><i class="fas fa-brain"></i></div>
                 <div class="major__title"><h2>AI</h2></div>
-                <div class="major__description">Keras,Pytorch</div>
+                <div class="major__description">Keras,Pytorch <br/>(About Computer Vision)</div>
             </div>
         </div>
         <!-- <div class="about__jobs">
@@ -88,7 +93,7 @@
         <h1>Skills</h1>
         <h2>Skills & Attributes</h2>
         <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit quibusdam nisi ad voluptatibus eos. At, vitae cum est placeat, impedit ex numquam animi beatae nostrum reiciendis voluptatem aspernatur asperiores debitis?
+        
         </p>
         <div class="skillset">
             <div class="skillset__left">
@@ -96,45 +101,45 @@
                 <div class="skill">
                     <div class="skill__description">
                         <span>JavaScript</span>
-                        <span>90%</span>
+                        <span>75%</span>
                     </div>
                     <div class="skill__bar">
-                        <div class="skill__value" style = "width:90%"></div>
+                        <div class="skill__value" style = "width:75%"></div>
                     </div>
                     <div class="skill">
                         <div class="skill__description" >
                             <span>Python</span>
-                            <span>90%</span>
+                            <span>75%</span>
                         </div>
                         <div class="skill__bar">
-                            <div class="skill__value" style = "width:90%"></div>
+                            <div class="skill__value" style = "width:75%"></div>
                         </div>
                     </div>
                     <div class="skill">
                         <div class="skill__description">
                             <span>HTML&CSS</span>
-                            <span>80%</span>
-                        </div>
-                        <div class="skill__bar">
-                            <div class="skill__value" style="width:80%"></div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <div class="skill__description">
-                            <span>C++</span>
                             <span>60%</span>
                         </div>
                         <div class="skill__bar">
                             <div class="skill__value" style="width:60%"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill__description">
+                            <span>React</span>
+                            <span>50%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value" style="width:50%"></div>
                         </div>
                     </div>
                     <div class="skill">
                         <div class="skill__description">
                             <span>JAVA</span>
-                            <span>60%</span>
+                            <span>40%</span>
                         </div>
                         <div class="skill__bar">
-                            <div class="skill__value" style="width:60%"></div>
+                            <div class="skill__value" style="width:40%"></div>
                         </div>
                     </div>
                 </div>
@@ -168,12 +173,19 @@
             <h1>My work</h1>
         <h3>projects</h3>
         <div class="work__categories">
-            <button class="category__btn selected" data-filter="*">All<span class = "category__count">3</span></button>
-            <button class="category__btn" data-filter="front-end">Frontend<span class = "category__count">1</span></button>
+            <button class="category__btn selected" data-filter="*">All<span class = "category__count">6</span></button>
+            <button class="category__btn" data-filter="front-end">Frontend<span class = "category__count">4</span></button>
             <button class="category__btn" data-filter="back-end">Backend<span class = "category__count">1</span></button>
             <button class="category__btn" data-filter="ai">AI<span class = "category__count">1</span></button>
         </div>
         <div class="work__projects">
+            <a href="https://github.com/BonJunKu/react-messenger-14th" class="project" target= "blank" data-type="front-end">
+                <img class="project__img" src="img/kakao.png" alt="thumbnail">
+                <div class="project__description">
+                    <h3>Kakao talk clone</h3>
+                    <span>React</span>
+                </div>
+            </a>
             <a href="https://github.com/BonJunKu/ScooterHelmetDetector" class="project" target= "blank" data-type="ai">
                 <img class="project__img" src="img/SHD.png" alt="thumbnail">
                 <div class="project__description">
@@ -181,11 +193,25 @@
                     <span>Object Detection with YOLO</span>
                 </div>
             </a>
+            <a href="https://github.com/BonJunKu/vanilla-todo-14th" class="project" target= "blank" data-type="front-end">
+                <img class="project__img" src="img/vanillaTodo.png" alt="thumbnail">
+                <div class="project__description">
+                    <h3>To Do List</h3>
+                    <span>Vanilla JS</span>
+                </div>
+            </a>
+            <a href="https://github.com/BonJunKu/react-todo-14th" class="project" target= "blank" data-type="front-end">
+                <img class="project__img" src="img/reactTodo.png" alt="thumbnail">
+                <div class="project__description">
+                    <h3>To Do List</h3>
+                    <span>React</span>
+                </div>
+            </a>
             <a href="https://bonjunku.github.io/Portfolio/u" class="project" target= "blank" data-type="front-end">
                 <img class="project__img" src="img/portfolio.png" alt="thumbnail">
                 <div class="project__description">
                     <h3>Portfolio Site</h3>
-                    <span>This site! HTML and CSS</span>
+                    <span>Vanilla JS</span>
                 </div>
             </a>
             <a href="https://github.com/bonjunku" class="project" target= "blank" data-type="back-end">  
@@ -202,37 +228,25 @@
     <!-- Testiominals -->
     <section id="testimonials">
     <div class="section__container">
-        <h1>Testimonials</h1>   
-        <h3>See what they say about me</h3>
+        <h1>Challenge Log</h1>   
+        <h3>See what I did</h3>
         <div class="testimonials">
             <div class = "testimonial">
-                <img src="img/hamzzi.jpg" alt="People" class="testimonial__avatar">
+                <img src="img/ceos.jpg" alt="People" class="testimonial__avatar">
                 <div class="testimonial__speech-bubble">
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut iusto quibusdam accusamus perferendis repellendus cupiditate veniam neque quam, recusandae ratione adipisci facere harum hic? Perspiciatis eveniet ad earum beatae nesciunt?
-                    </p>
-                    <p class="name"><a href="">hamzzi</a> / AWS</p>
+                    <p>CEOS, IT Startup Club / Front-end Engineer / 2021.09~ </p>
+           
                 </div>
             </div>
             <div class = "testimonial">
                 <div class="testimonial__speech-bubble">
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus pariatur corrupti repellendus beatae. Autem itaque neque nostrum nulla id ducimus, voluptates dolor voluptate enim numquam assumenda inventore ea dignissimos maiores.
-                    </p>
-                    <p class="name"><a href="">anonymous</a> / company</p>
+                    <p>NAVER BoostCamp Challenge 6th / Web Full Stack / 2021.07~2021.08</p>
+    
                 </div>
-                <img src="img/man.jpg" alt="People" class="testimonial__avatar">
+                <img src="img/thumbnail.png" alt="People" class="testimonial__avatar">
                 
             </div>
-            <div class = "testimonial">
-                <img src="img/man.jpg" alt="People" class="testimonial__avatar">
-                <div class="testimonial__speech-bubble">
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam explicabo quos commodi quod impedit reprehenderit rem corporis cupiditate! Magnam minima porro voluptatibus perspiciatis, odio fuga. Libero, nobis? Facilis, quisquam necessitatibus?
-                    </p>
-                    <p class="name"><a href="">annonymus</a> / company</p>
-                </div>
-            </div>
+           
             
         </div>
     </div>
@@ -246,8 +260,8 @@
             <a href="https://github.com/bonjunku" target="_blank">
             <i class="fab fa-github"></i>
             </a>
-            <a href="#" target="_blank">
-                <i class="fa fa-linkedin-square"></i>
+            <a href="https://zaraza.tistory.com/" target="_blank">
+                <i class="fab fa-blogger"></i>
             </a>
         </div>
         <div class="contact__rights">
